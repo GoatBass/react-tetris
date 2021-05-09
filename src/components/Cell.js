@@ -1,13 +1,11 @@
 import React from 'react';
 
 import { StyledCell } from './styles/StyledCell';
-import { TETROMINOS } from '../tettrominos';
+import { TETROMINOS } from '../tetrominos';
 
 const Cell = (props) => {
     return (
-        <StyledCell type={props.type} color={TETROMINOS[props.type].color}>
-            cell
-        </StyledCell>
+        <StyledCell type={props.type} color={TETROMINOS[props.type].color} />
     );
 };
 
